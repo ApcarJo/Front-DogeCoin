@@ -13,7 +13,7 @@ const TransactionBox = (props) => {
             </div>
             <div className="center df column">
                 <div className="coinStyle df row">
-                <span>+*** </span>
+                <span>+{(props.quantity / 2022).toFixed(2)} </span>
                 <span> DOGE</span> 
                 </div>
                 <span className="priceQuantity">+${props.quantity}</span>
