@@ -18,6 +18,9 @@ const Login = (props) => {
     }
 
     useEffect(() => {
+        if (props.credentials.user?._id) {
+            navigate('/transactions');
+        }
     }, []);
 
     useEffect(() => {
@@ -85,7 +88,6 @@ const Login = (props) => {
                     <div className="sendButton center" onClick={() => logeame()}>Sign in</div>
                     <div>{msgError.eValidate}</div>
                     <div className="sendButton" onClick={() => navigate(`/register`)}>Register now!</div>
-                    <div className="sendButton" onClick={() => navigate(`/transactions`)}>Transactions</div>
                 </div>
             </div>
         </div>
