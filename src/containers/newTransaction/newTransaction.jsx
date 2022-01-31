@@ -14,7 +14,7 @@ const NewTransaction = (props) => {
             user_id: '',
             isSent: true,
         });
-        
+
     const [errors, setErrors] = useState({});
 
     const updateForm = (e) => {
@@ -77,8 +77,10 @@ const NewTransaction = (props) => {
                         onBlur={() => checkError("quantity")} placeholder="Quantity" required />
                     <div className="errorsText">{errors.quantity}</div>
                 </div>
-
-                <div className="sendButton center" onClick={() => sendTransaction()}>Register</div>
+                <div className="bottomCard max_width df sb">
+                    <div className="sendButton center" onClick={() => sendTransaction()}>Send</div>
+                    <div className="sendButton center" onClick={() => navigate(-1)}>back</div>
+                </div>
             </div>
         </div>
     )
