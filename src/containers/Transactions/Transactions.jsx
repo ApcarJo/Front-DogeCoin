@@ -40,12 +40,12 @@ const Transaction = (props) => {
     return (
         <div className="center column">
             <div className="boxTr bg-grey">
-                <Header />
+                {props.credentials.user?._id && <Header />}
                 <GraphicBox />
                 <div className="center paddingY">
                     <button className="sendTr" onClick={() => navigate('/newTransaction')}> Send </button>
                 </div>
-                <div>
+                {props.credentials.user?.transactions && <div>
                     {transactions.map((a, index) => (
                         <div className="">
                             <div>
@@ -61,10 +61,10 @@ const Transaction = (props) => {
                             />
                         </div>
                     ))}
-                </div>
+                </div>}
             </div>
         </div >
-    );
+    )
 }
 
 export default connect((state) => ({

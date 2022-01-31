@@ -14,7 +14,7 @@ const Header = (props) => {
     }
 
 
-
+    if (props.credentials.user?._id) {
     return (
         <div>
             <div className="headerTr">
@@ -23,7 +23,16 @@ const Header = (props) => {
                 <span className="navigateButtons" onClick={() => logOut()}>LogOut</span>
             </div>
         </div>
-    )
+    );
+    } else {
+        <div>
+            <div className="headerTr">
+                <span className="navigateButtons" onClick={() => navigate(-1)}>back</span>
+                <span>Dogecoin</span>
+                <span className="navigateButtons" onClick={() => navigate('/login')}>Log In</span>
+            </div>
+        </div>
+    }
 }
 
 export default connect((state) => ({

@@ -66,7 +66,7 @@ const Login = (props) => {
 
             // redirección
             setTimeout(() => {
-                navigate('transactions');
+                navigate('/transactions');
             }, 250);
 
         } catch {
