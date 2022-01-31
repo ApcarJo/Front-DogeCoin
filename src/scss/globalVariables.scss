@@ -1,0 +1,43 @@
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.df {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.top {
+    align-items: flex-start;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.max_size {
+    max-width: 100%;
+    max-height: 100%;
+}
