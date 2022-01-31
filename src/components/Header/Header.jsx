@@ -22,9 +22,6 @@ const Header = (props) => {
                 <span>Dogecoin</span>
                 <span className="navigateButtons" onClick={() => logOut()}>LogOut</span>
             </div>
-            <div className="center paddingY">
-                <button className="sendTr" onClick={() => navigate('/newTransaction')}> Send </button>
-            </div>
         </div>
     )
 }

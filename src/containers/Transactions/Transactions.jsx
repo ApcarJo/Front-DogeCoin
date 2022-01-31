@@ -4,9 +4,12 @@ import axios from 'axios';
 import moment from 'moment';
 import TransactionBox from '../../components/TransactionBox/TransactionBox'
 import Header from '../../components/Header/Header';
+import GraphicBox from '../../components/GraphicBox/GraphicBox';
+import { useNavigate } from 'react-router-dom';
 
 const Transaction = (props) => {
 
+    let navigate = useNavigate();
 
     // Hooks
     const [transactions, setTransactions] = useState([]);
@@ -37,7 +40,11 @@ const Transaction = (props) => {
     return (
         <div className="center column">
             <div className="boxTr bg-grey">
-                <Header/>
+                <Header />
+                <GraphicBox />
+                <div className="center paddingY">
+                    <button className="sendTr" onClick={() => navigate('/newTransaction')}> Send </button>
+                </div>
                 <div>
                     {transactions.map((a, index) => (
                         <div className="">
