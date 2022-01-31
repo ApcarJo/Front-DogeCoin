@@ -86,9 +86,9 @@ const Login = (props) => {
                 <br></br>
                 <div className="actionButtons df row">
                     <div className="sendButton center" onClick={() => logeame()}>Sign in</div>
-                    <div>{msgError.eValidate}</div>
                     <div className="sendButton" onClick={() => navigate(`/register`)}>Register now!</div>
                 </div>
+                <div>{msgError.eValidate}</div>
             </div>
         </div>
     )
