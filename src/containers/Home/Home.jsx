@@ -15,7 +15,6 @@ const Home = (props) => {
     return (
         <div className="center">
             {/* {this.state.user && (<Login/>)}     */}
-            {console.log(props.credentials.user)}
 
             <div className="center">
                 <Login />

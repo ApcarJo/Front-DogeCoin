@@ -55,7 +55,6 @@ const NewTransaction = (props) => {
         }
 
         let res = await axios.post('https://dogecoin-back.herokuapp.com/transactions', body, { headers: { 'authorization': 'Bearer ' + props.credentials.token } });
-        console.log(res);
 
         setTimeout(() => {
             navigate(`/transactions`);
