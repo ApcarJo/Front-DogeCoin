@@ -67,7 +67,7 @@ const NewTransaction = (props) => {
     return (
         <div className="vistaRegisterUser">
             <div className="actionCard center column">
-                NEW TRANSACTION
+                <span className="priceQuantity">NEW TRANSACTION</span>
                 <div className="box1">
                     <input className="inputRegister" name="address" type="text" onChange={updateForm} onBlur={() => checkError("address")} placeholder="Address" required />
                     <div className="errorsText">{errors.eAddress}</div>
