@@ -1,0 +1,12 @@
+
+.dateTr {
+    padding: 0.5em 1em;
+}
+
+.headerTr {
+    background-color: white;
+    padding: 1em;
+    @extend .row;
+    @extend .center;
+    @extend .sb;
+}
