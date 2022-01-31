@@ -16,6 +16,8 @@
 .boxTr {
     border: solid 0.04em rgba(211, 211, 211, 0.609);
     border-radius: 0.5em;
+    max-width: 100%;
+    min-width: 25em;
 }
 
 .sendTr {

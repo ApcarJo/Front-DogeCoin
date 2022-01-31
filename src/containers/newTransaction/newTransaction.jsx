@@ -21,6 +21,8 @@ const NewTransaction = (props) => {
         setDataTransaction({ ...dataTransaction, [e.target.name]: e.target.value })
     }
 
+    const dateTr = new Date();
+
     const checkError = (arg) => {
         switch (arg) {
             case 'address':
@@ -51,6 +53,7 @@ const NewTransaction = (props) => {
             address: dataTransaction.address,
             quantity: dataTransaction.quantity,
             user_id: props.credentials.user?._id,
+            date: dateTr,
             isSent: true
         }
 
