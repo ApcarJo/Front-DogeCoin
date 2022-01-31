@@ -11,14 +11,9 @@ const Register = () => {
     // Hook
     const [datosUser,setDatosUser] = useState(
         {
-        name:'',
         email:'',
-        phone:'',
         password:'',
         password2: '',
-        dateOfBirth: '',
-        city: '',
-        cp: ''
     });
 
     const [errors, setErrors] = useState({
