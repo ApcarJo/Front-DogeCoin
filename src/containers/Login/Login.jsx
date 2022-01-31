@@ -77,7 +77,7 @@ const Login = (props) => {
     return (
         <div className="vistaLogin">
             <div className="actionCard center column">
-                LOGIN
+                <span className="priceQuantity">LOGIN</span>
                 <input className="loginBox" name="email" type="text" onChange={updateCredentials} onBlur={() => checkError("mail")} placeholder="email" required />
                 <div className="errorsText">{msgError.eEmail}</div>
 
