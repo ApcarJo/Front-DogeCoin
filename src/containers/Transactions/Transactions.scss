@@ -9,4 +9,29 @@
     @extend .row;
     @extend .center;
     @extend .sb;
+    height: fit-content;
+    @extend .top;
+}
+
+.boxTr {
+    border: solid 0.04em rgba(211, 211, 211, 0.609);
+    border-radius: 0.5em;
+}
+
+.sendTr {
+    all: unset;
+    background-color: rgba(106, 170, 243, 0.685);
+    padding: 0.7em 4em;
+    color: white;
+    border-radius: 0.3em;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    &:hover {
+        cursor: pointer;
+        background-color: lightskyblue;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+
+.navigateButtons {
+    cursor: pointer;
 }
