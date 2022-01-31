@@ -2,6 +2,10 @@
 @import 'scss/globalVariables.scss';
 @import './containers/Login/Login.scss';
 @import './containers/Register/Register.scss';
+@import './containers/Transactions/Transactions.scss';
+
+@import './components/TransactionBox/TransactionBox.scss';
+
 
 .App {
   text-align: center;
