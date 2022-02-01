@@ -69,19 +69,18 @@ const NewTransaction = (props) => {
             <div className="actionCard center column">
                 <span className="priceQuantity">NEW TRANSACTION</span>
                 <div className="box1">
-                    <input className="inputRegister" name="address" type="text" onChange={updateForm} onBlur={() => checkError("address")} placeholder="Address" required />
+                    <input className="inputWhite" name="address" type="text" onChange={updateForm} onBlur={() => checkError("address")} placeholder="Address" required />
                     <div className="errorsText">{errors.eAddress}</div>
                 </div>
 
-
                 <div className="box1">
-                    <input className="inputRegister" name="quantity" type="number" onChange={updateForm}
+                    <input className="inputWhite" name="quantity" type="number" onChange={updateForm}
                         onBlur={() => checkError("quantity")} placeholder="Quantity" required />
                     <div className="errorsText">{errors.quantity}</div>
                 </div>
                 <div className="bottomCard max_width df sb">
                     <div className="sendButton center" onClick={() => sendTransaction()}>Send</div>
-                    <div className="sendButton center" onClick={() => navigate(-1)}>back</div>
+                    <div className="sendButton center" onClick={() => navigate(-1)}>Back</div>
                 </div>
             </div>
         </div>
