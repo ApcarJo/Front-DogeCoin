@@ -79,18 +79,18 @@ const Register = () => {
             <div className="actionCard center column">
                 REGISTER
                 <div className="box1">
-                    <input className="inputRegister" name="email" type="text" onChange={updateFormulario} onBlur={() => checkError("email")} placeholder="Email" required />
+                    <input className="inputWhite" name="email" type="text" onChange={updateFormulario} onBlur={() => checkError("email")} placeholder="Email" required />
                     <div className="errorsText">{errors.eEmail}</div>
                 </div>
 
 
                 <div className="box1">
-                    <input className="inputRegister" name="password" type="password" onChange={updateFormulario} onBlur={() => checkError("password")} placeholder="Password" required />
+                    <input className="inputWhite" name="password" type="password" onChange={updateFormulario} onBlur={() => checkError("password")} placeholder="Password" required />
                     <div className="errorsText">{errors.ePassword}</div>
                 </div>
 
                 <div className="box1">
-                    <input className="inputRegister" name="password2" type="password" onChange={updateFormulario} onBlur={() => checkError("password2")} placeholder="Repeat Password" required />
+                    <input className="inputWhite" name="password2" type="password" onChange={updateFormulario} onBlur={() => checkError("password2")} placeholder="Repeat Password" required />
                     <div className="errorsText">{errors.ePassword2}</div>
                 </div>
                 <div className="bottomCard max_width df sb">
